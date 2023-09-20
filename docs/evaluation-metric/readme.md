@@ -30,8 +30,8 @@ $$
 
 
 Where:
-- $ \text{MAX}_I $ is the maximum possible pixel value of the image. For an 8-bit grayscale image, it is 255.
-- $ \text{MSE} $ is the Mean Squared Error between the original and the reconstructed image.
+- $\text{MAX}_I$ is the maximum possible pixel value of the image. For an 8-bit grayscale image, it is 255.
+- $\text{MSE}$ is the Mean Squared Error between the original and the reconstructed image.
 
 
 ### Interpretation
@@ -54,12 +54,12 @@ $$
 $$
 
 Where:
-- $ \mu_x $ is the average of $ x $
-- $ \mu_y $ is the average of $ y $
-- $ \sigma_x^2 $ is the variance of $ x $
-- $ \sigma_y^2 $ is the variance of $ y $
-- $ \sigma_{xy} $ is the covariance of $ x $ and $ y $
-- $ c_1 $ and $ c_2 $ are two variables to stabilize the division with weak denominator.
+- $\mu_x$ is the average of $x$
+- $\mu_y$ is the average of $y$
+- $\sigma_x^2$ is the variance of $x$
+- $\sigma_y^2$ is the variance of $y$
+- $\sigma_{xy}$ is the covariance of $x$ and $y$
+- $c_1$ and $c_2$ are two variables to stabilize the division with weak denominator.
 
 
 ### Interpretation
