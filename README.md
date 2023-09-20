@@ -1,4 +1,4 @@
-# AI-ML based Intelligent de-hazing algorithm
+#AI-ML based Intelligent de-hazing algorithm
 
 ## Introduction
 
