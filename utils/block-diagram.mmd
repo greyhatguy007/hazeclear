@@ -1,0 +1,39 @@
+graph TD
+
+    %% Encoder
+    subgraph Encoder
+    A["Input (Hazy Image)"]
+    B["Conv1 (Filters: 64, Kernel: 3x3)"]
+    C["Pooling1"]
+    D["Conv2 (Filters: 128, Kernel: 3x3)"]
+    E["Pooling2"]
+    end
+
+    subgraph .
+    F["Bottleneck (Compact Encoded Features)"]
+    end
+
+    %% Decoder
+    subgraph Decoder
+    G["Upsample1"]
+    H["Conv3 (Filters: 128, Kernel: 3x3)"]
+    I["Upsample2"]
+    J["Conv4 (Filters: 64, Kernel: 3x3)"]
+    K["Output (Dehazed Image)"]
+    end
+
+    %% Connections
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+
+    %% Skip Connections
+    B -.-> H
+    D -.-> J
