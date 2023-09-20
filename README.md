@@ -41,7 +41,7 @@ We are utilizing the [Dense-Haze dataset](https://www.kaggle.com/datasets/rajat9
 ## Technical Details
 
 - **Framework**: PyTorch
-- **Model Architecture**: [Encoder-Decoder CNN](./docs/encoder-decoder-architecture/)
+- **Model Architecture**: [Encoder-Decoder CNN](./docs/encoder-decoder-architecture/readme.md)
 - **Loss Function**: Mean Squared Error (MSE)
 - **Optimizer**: Adam
 - **Evaluation Metrics**: [PSNR, SSIM](./docs/evaluation-metric/readme.md)

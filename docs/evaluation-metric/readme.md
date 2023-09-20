@@ -24,11 +24,15 @@ PSNR is a popular metric used to measure the quality of reconstructed images. It
 
 ### Calculation
 
-\[ \text{PSNR} = 10 \times \log_{10}\left(\frac{\text{MAX}_I^2}{\text{MSE}}\right) \]
+$$
+\text{PSNR} = 10 \times \log_{10}\left(\frac{\text{MAX}_I^2}{\text{MSE}}\right)
+$$
+
 
 Where:
-- \( \text{MAX}_I \) is the maximum possible pixel value of the image. For an 8-bit grayscale image, it is 255.
-- \( \text{MSE} \) is the Mean Squared Error between the original and the reconstructed image.
+- $ \text{MAX}_I $ is the maximum possible pixel value of the image. For an 8-bit grayscale image, it is 255.
+- $ \text{MSE} $ is the Mean Squared Error between the original and the reconstructed image.
+
 
 ### Interpretation
 
@@ -45,15 +49,18 @@ SSIM is an index that measures the similarity between two images. It provides a 
 
 The SSIM index is calculated on various windows of an image. The measure between two windows \( x \) and \( y \) of common size \( K \times K \) is:
 
-\[ \text{SSIM}(x,y) = \frac{(2\mu_x\mu_y + c_1)(2\sigma_{xy} + c_2)}{(\mu_x^2 + \mu_y^2 + c_1)(\sigma_x^2 + \sigma_y^2 + c_2)} \]
+$$
+\text{SSIM}(x,y) = \frac{(2\mu_x\mu_y + c_1)(2\sigma_{xy} + c_2)}{(\mu_x^2 + \mu_y^2 + c_1)(\sigma_x^2 + \sigma_y^2 + c_2)}
+$$
 
 Where:
-- \( \mu_x \) is the average of \( x \)
-- \( \mu_y \) is the average of \( y \)
-- \( \sigma_x^2 \) is the variance of \( x \)
-- \( \sigma_y^2 \) is the variance of \( y \)
-- \( \sigma_{xy} \) is the covariance of \( x \) and \( y \)
-- \( c_1 \) and \( c_2 \) are two variables to stabilize the division with weak denominator.
+- $ \mu_x $ is the average of $ x $
+- $ \mu_y $ is the average of $ y $
+- $ \sigma_x^2 $ is the variance of $ x $
+- $ \sigma_y^2 $ is the variance of $ y $
+- $ \sigma_{xy} $ is the covariance of $ x $ and $ y $
+- $ c_1 $ and $ c_2 $ are two variables to stabilize the division with weak denominator.
+
 
 ### Interpretation
 
